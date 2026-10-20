@@ -1,0 +1,253 @@
+{
+  "scene": "scene-0061",
+  "sample_token": "ca9a282c9e77460f8360f564131a8af5",
+  "camera": "CAM_FRONT",
+  "lidar": "LIDAR_TOP",
+  "camera_timestamp_us": 1532402927612460,
+  "lidar_timestamp_us": 1532402927647951,
+  "timestamp_delta_ms": 35.491,
+  "image_width": 1600,
+  "image_height": 900,
+  "objects": [
+    {
+      "index": 0,
+      "annotation_token": "924ee6ac1fed440a9d9e3720aac635a0",
+      "category": "vehicle.car",
+      "image_file": "0000.jpg",
+      "lidar_file": "0000.npy",
+      "bbox_xyxy": [
+        1504,
+        489,
+        1600,
+        524
+      ],
+      "crop_width": 96,
+      "crop_height": 35,
+      "lidar_points_count": 5
+    },
+    {
+      "index": 1,
+      "annotation_token": "83d881a6b3d94ef3a3bc3b585cc514f8",
+      "category": "vehicle.truck",
+      "image_file": "0001.jpg",
+      "lidar_file": "0001.npy",
+      "bbox_xyxy": [
+        62,
+        203,
+        623,
+        680
+      ],
+      "crop_width": 561,
+      "crop_height": 477,
+      "lidar_points_count": 495
+    },
+    {
+      "index": 2,
+      "annotation_token": "cc636a58e27e446cbdd030c14f3718fd",
+      "category": "movable_object.barrier",
+      "image_file": "0002.jpg",
+      "lidar_file": "0002.npy",
+      "bbox_xyxy": [
+        1355,
+        515,
+        1491,
+        622
+      ],
+      "crop_width": 136,
+      "crop_height": 107,
+      "lidar_points_count": 19
+    },
+    {
+      "index": 3,
+      "annotation_token": "c5e9455e98bb42c0af7d1990db1df0c9",
+      "category": "movable_object.barrier",
+      "image_file": "0003.jpg",
+      "lidar_file": "0003.npy",
+      "bbox_xyxy": [
+        1405,
+        519,
+        1533,
+        614
+      ],
+      "crop_width": 128,
+      "crop_height": 95,
+      "lidar_points_count": 5
+    },
+    {
+      "index": 4,
+      "annotation_token": "cda0a9085607438c9b1ea87f4360dd64",
+      "category": "vehicle.car",
+      "image_file": "0004.jpg",
+      "lidar_file": "0004.npy",
+      "bbox_xyxy": [
+        895,
+        477,
+        959,
+        531
+      ],
+      "crop_width": 64,
+      "crop_height": 54,
+      "lidar_points_count": 5
+    },
+    {
+      "index": 5,
+      "annotation_token": "e865152aaa194f22b97ad0078c012b21",
+      "category": "movable_object.barrier",
+      "image_file": "0005.jpg",
+      "lidar_file": "0005.npy",
+      "bbox_xyxy": [
+        1112,
+        494,
+        1161,
+        542
+      ],
+      "crop_width": 49,
+      "crop_height": 48,
+      "lidar_points_count": 5
+    },
+    {
+      "index": 6,
+      "annotation_token": "f1ae3f713ba946069fa084a6b8626fbf",
+      "category": "movable_object.barrier",
+      "image_file": "0006.jpg",
+      "lidar_file": "0006.npy",
+      "bbox_xyxy": [
+        1525,
+        525,
+        1600,
+        677
+      ],
+      "crop_width": 75,
+      "crop_height": 152,
+      "lidar_points_count": 50
+    },
+    {
+      "index": 7,
+      "annotation_token": "bc638d33e89848f58c0b3ccf3900c8bb",
+      "category": "movable_object.barrier",
+      "image_file": "0007.jpg",
+      "lidar_file": "0007.npy",
+      "bbox_xyxy": [
+        1305,
+        509,
+        1414,
+        603
+      ],
+      "crop_width": 109,
+      "crop_height": 94,
+      "lidar_points_count": 13
+    },
+    {
+      "index": 8,
+      "annotation_token": "b7cbc6d0e80e4dfda7164871ece6cb71",
+      "category": "vehicle.truck",
+      "image_file": "0008.jpg",
+      "lidar_file": "0008.npy",
+      "bbox_xyxy": [
+        980,
+        460,
+        1041,
+        523
+      ],
+      "crop_width": 61,
+      "crop_height": 63,
+      "lidar_points_count": 7
+    },
+    {
+      "index": 9,
+      "annotation_token": "05de82bdb8484623906bb9d97ae87542",
+      "category": "human.pedestrian.adult",
+      "image_file": "0009.jpg",
+      "lidar_file": "0009.npy",
+      "bbox_xyxy": [
+        599,
+        458,
+        657,
+        597
+      ],
+      "crop_width": 58,
+      "crop_height": 139,
+      "lidar_points_count": 13
+    },
+    {
+      "index": 10,
+      "annotation_token": "bfedb0d85e164b7697d1e72dd971fb72",
+      "category": "movable_object.pushable_pullable",
+      "image_file": "0010.jpg",
+      "lidar_file": "0010.npy",
+      "bbox_xyxy": [
+        573,
+        493,
+        632,
+        597
+      ],
+      "crop_width": 59,
+      "crop_height": 104,
+      "lidar_points_count": 10
+    },
+    {
+      "index": 11,
+      "annotation_token": "adf1594def9e4722b952fea33b307937",
+      "category": "movable_object.barrier",
+      "image_file": "0011.jpg",
+      "lidar_file": "0011.npy",
+      "bbox_xyxy": [
+        1265,
+        507,
+        1359,
+        590
+      ],
+      "crop_width": 94,
+      "crop_height": 83,
+      "lidar_points_count": 9
+    },
+    {
+      "index": 12,
+      "annotation_token": "49f76277d07541c5a584aa14c9d28754",
+      "category": "vehicle.car",
+      "image_file": "0012.jpg",
+      "lidar_file": "0012.npy",
+      "bbox_xyxy": [
+        713,
+        461,
+        787,
+        534
+      ],
+      "crop_width": 74,
+      "crop_height": 73,
+      "lidar_points_count": 15
+    },
+    {
+      "index": 13,
+      "annotation_token": "15a3b4d60b514db5a3468e2aef72a90c",
+      "category": "movable_object.barrier",
+      "image_file": "0013.jpg",
+      "lidar_file": "0013.npy",
+      "bbox_xyxy": [
+        1236,
+        506,
+        1314,
+        582
+      ],
+      "crop_width": 78,
+      "crop_height": 76,
+      "lidar_points_count": 6
+    },
+    {
+      "index": 14,
+      "annotation_token": "2bfcc693ae9946daba1d9f2724478fd4",
+      "category": "movable_object.barrier",
+      "image_file": "0014.jpg",
+      "lidar_file": "0014.npy",
+      "bbox_xyxy": [
+        1429,
+        522,
+        1600,
+        649
+      ],
+      "crop_width": 171,
+      "crop_height": 127,
+      "lidar_points_count": 27
+    }
+  ]
+}

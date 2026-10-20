@@ -1,0 +1,204 @@
+{
+  "scene": "scene-0061",
+  "sample_token": "ca9a282c9e77460f8360f564131a8af5",
+  "candidate_source": "camera_lidar_geometric_fusion",
+  "ground_truth_used_for_candidates": false,
+  "camera": "CAM_FRONT",
+  "lidar": "LIDAR_TOP",
+  "total_lidar_points": 34688,
+  "non_ground_points": 20267,
+  "points_after_sor": 16461,
+  "points_in_roi": 908,
+  "points_projected_in_camera": 663,
+  "cluster_count": 7,
+  "projected_box_count": 5,
+  "not_projected_count": 2,
+  "candidates": [
+    {
+      "candidate_id": 0,
+      "source": "lidar_clustering_road_aligned",
+      "point_count": 5,
+      "points_file": "points/candidate_000.npy",
+      "center_lidar_xyz": [
+        -5.735349178314209,
+        2.4434008598327637,
+        -1.2148855677229795
+      ],
+      "dimensions_lidar_lwh": [
+        0.5548783358772417,
+        0.3,
+        0.9035278063978023
+      ],
+      "yaw_lidar_rad": 1.5642136242911895,
+      "aspect_ratio_wl": 0.5407,
+      "is_degenerate_geometry": false,
+      "min_height_above_ground": 0.0,
+      "projected_to_camera": false,
+      "visible_ratio": null,
+      "bbox_camera_xyxy": null
+    },
+    {
+      "candidate_id": 1,
+      "source": "lidar_clustering_road_aligned",
+      "point_count": 412,
+      "points_file": "points/candidate_001.npy",
+      "center_lidar_xyz": [
+        -4.206948280334473,
+        13.724468231201172,
+        0.31017059427207583
+      ],
+      "dimensions_lidar_lwh": [
+        7.5,
+        2.96907218950817,
+        3.4
+      ],
+      "yaw_lidar_rad": 1.4432024193041024,
+      "aspect_ratio_wl": 0.3959,
+      "is_degenerate_geometry": false,
+      "min_height_above_ground": 0.0,
+      "projected_to_camera": true,
+      "visible_ratio": 1.0,
+      "bbox_camera_xyxy": [
+        22,
+        200,
+        654,
+        658
+      ]
+    },
+    {
+      "candidate_id": 2,
+      "source": "lidar_clustering_road_aligned",
+      "point_count": 50,
+      "points_file": "points/candidate_002.npy",
+      "center_lidar_xyz": [
+        -4.277621746063232,
+        18.081195831298828,
+        0.2581570457817841
+      ],
+      "dimensions_lidar_lwh": [
+        1.877288198985053,
+        0.3320497609476294,
+        3.062176165699616
+      ],
+      "yaw_lidar_rad": -0.09394862652980485,
+      "aspect_ratio_wl": 0.1769,
+      "is_degenerate_geometry": false,
+      "min_height_above_ground": 0.0,
+      "projected_to_camera": true,
+      "visible_ratio": 1.0,
+      "bbox_camera_xyxy": [
+        444,
+        361,
+        586,
+        585
+      ]
+    },
+    {
+      "candidate_id": 3,
+      "source": "lidar_clustering_road_aligned",
+      "point_count": 15,
+      "points_file": "points/candidate_003.npy",
+      "center_lidar_xyz": [
+        -2.0849528312683105,
+        37.81709289550781,
+        0.017262705748144813
+      ],
+      "dimensions_lidar_lwh": [
+        4.4,
+        1.75,
+        1.703607542147509
+      ],
+      "yaw_lidar_rad": 1.5707963267948966,
+      "aspect_ratio_wl": 0.3977,
+      "is_degenerate_geometry": false,
+      "min_height_above_ground": 0.0,
+      "projected_to_camera": true,
+      "visible_ratio": 1.0,
+      "bbox_camera_xyxy": [
+        714,
+        472,
+        783,
+        535
+      ]
+    },
+    {
+      "candidate_id": 4,
+      "source": "lidar_clustering_road_aligned",
+      "point_count": 5,
+      "points_file": "points/candidate_004.npy",
+      "center_lidar_xyz": [
+        3.1640853881835938,
+        40.35649871826172,
+        -0.0713733357889702
+      ],
+      "dimensions_lidar_lwh": [
+        4.4,
+        1.75,
+        1.55
+      ],
+      "yaw_lidar_rad": 1.5707963267948966,
+      "aspect_ratio_wl": 0.3977,
+      "is_degenerate_geometry": false,
+      "min_height_above_ground": 0.0,
+      "projected_to_camera": true,
+      "visible_ratio": 1.0,
+      "bbox_camera_xyxy": [
+        889,
+        482,
+        957,
+        535
+      ]
+    },
+    {
+      "candidate_id": 5,
+      "source": "lidar_clustering_road_aligned",
+      "point_count": 142,
+      "points_file": "points/candidate_005.npy",
+      "center_lidar_xyz": [
+        7.344288349151611,
+        4.959025859832764,
+        -1.5974838170332708
+      ],
+      "dimensions_lidar_lwh": [
+        5.939076347434969,
+        0.8246132929793079,
+        0.4
+      ],
+      "yaw_lidar_rad": 1.5193799777044417,
+      "aspect_ratio_wl": 0.1388,
+      "is_degenerate_geometry": true,
+      "min_height_above_ground": 0.0,
+      "projected_to_camera": false,
+      "visible_ratio": null,
+      "bbox_camera_xyxy": null
+    },
+    {
+      "candidate_id": 6,
+      "source": "lidar_clustering_road_aligned",
+      "point_count": 203,
+      "points_file": "points/candidate_006.npy",
+      "center_lidar_xyz": [
+        7.739365577697754,
+        16.968494415283203,
+        -0.934166448481111
+      ],
+      "dimensions_lidar_lwh": [
+        17.88360993181899,
+        0.8,
+        1.1
+      ],
+      "yaw_lidar_rad": 1.5337204812291514,
+      "aspect_ratio_wl": 0.0447,
+      "is_degenerate_geometry": true,
+      "min_height_above_ground": 0.0,
+      "projected_to_camera": true,
+      "visible_ratio": 0.4270619530975293,
+      "bbox_camera_xyxy": [
+        1203,
+        522,
+        1599,
+        722
+      ]
+    }
+  ]
+}

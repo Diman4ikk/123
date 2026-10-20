@@ -1,0 +1,57 @@
+{
+  "dataset": "nuScenes mini",
+  "camera": "CAM_FRONT",
+  "lidar": "LIDAR_TOP",
+  "split_strategy": "scene-wise",
+  "train_scenes": [
+    "scene-0061",
+    "scene-0103",
+    "scene-0553",
+    "scene-0655",
+    "scene-0796",
+    "scene-1077",
+    "scene-1094",
+    "scene-1100"
+  ],
+  "val_scenes": [
+    "scene-0757",
+    "scene-0916"
+  ],
+  "total_keyframes": 404,
+  "visible_camera_boxes": 5364,
+  "point_coordinate_frame": "object_local_xyz",
+  "saved_objects": {
+    "train": 891,
+    "val": 308
+  },
+  "class_counts": {
+    "train": {
+      "truck": 75,
+      "pedestrian": 155,
+      "car": 550,
+      "special_machinery": 43,
+      "bicycle": 8,
+      "bus": 53,
+      "motorcycle": 7
+    },
+    "val": {
+      "special_machinery": 4,
+      "bus": 21,
+      "car": 203,
+      "truck": 26,
+      "bicycle": 5,
+      "pedestrian": 35,
+      "motorcycle": 14
+    }
+  },
+  "skipped_by_reason": {
+    "invalid_or_small_crop": 373,
+    "too_few_lidar_points": 2595,
+    "category_not_selected": 1197
+  },
+  "minimum_lidar_points": 10,
+  "minimum_crop_size": [
+    24,
+    24
+  ]
+}

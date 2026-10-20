@@ -1,0 +1,1452 @@
+{
+  "sample_token": "ca9a282c9e77460f8360f564131a8af5",
+  "point_overlap_evaluation": {
+    "settings": {
+      "min_intersection_points": 3,
+      "min_candidate_purity": 0.5,
+      "roi_x": [
+        -25.0,
+        25.0
+      ],
+      "roi_y": [
+        2.0,
+        50.0
+      ],
+      "roi_z": [
+        -2.0,
+        4.0
+      ],
+      "target_classes": [
+        "car",
+        "truck",
+        "bus",
+        "motorcycle",
+        "bicycle",
+        "special_machinery",
+        "pedestrian",
+        "barrier",
+        "traffic_cone"
+      ]
+    },
+    "summary": {
+      "points_after_roi": 908,
+      "ground_truth_objects": 32,
+      "ground_truth_objects_with_raw_points": 31,
+      "ground_truth_objects_with_points_after_ground_removal": 31,
+      "ground_truth_objects_with_points_after_roi": 22,
+      "detected_ground_truth_objects": 3,
+      "unmatched_ground_truth_objects": 29,
+      "candidate_clusters": 7,
+      "projected_candidates": 5,
+      "matched_candidates": 4,
+      "unmatched_candidates": 3,
+      "ground_truth_recall": 0.09375,
+      "ground_truth_by_class": {
+        "pedestrian": {
+          "total": 8,
+          "detected": 0
+        },
+        "barrier": {
+          "total": 19,
+          "detected": 0
+        },
+        "car": {
+          "total": 3,
+          "detected": 2
+        },
+        "truck": {
+          "total": 2,
+          "detected": 1
+        }
+      },
+      "raw_lidar_points": 34688,
+      "points_after_ground_removal": 20267
+    },
+    "ground_truth": [
+      {
+        "gt_token": "6b89da9bf1f84fd6a5fbe1c3b236f809",
+        "label": "pedestrian",
+        "category": "human.pedestrian.adult",
+        "center_lidar": [
+          21.00210703861167,
+          36.06110848124013,
+          -0.026147797730185142
+        ],
+        "detected": false,
+        "raw_points_in_box": 2,
+        "after_ground_removal": 2,
+        "after_roi_filter": 0,
+        "points_removed_by_ground_filter": 0,
+        "points_removed_by_roi_filter": 2,
+        "points_in_roi": 0
+      },
+      {
+        "gt_token": "70af124fceeb433ea73a79537e4bea9e",
+        "label": "pedestrian",
+        "category": "human.pedestrian.adult",
+        "center_lidar": [
+          20.42099930703839,
+          38.32058760113813,
+          0.029860336056348268
+        ],
+        "detected": false,
+        "raw_points_in_box": 1,
+        "after_ground_removal": 1,
+        "after_roi_filter": 0,
+        "points_removed_by_ground_filter": 0,
+        "points_removed_by_roi_filter": 1,
+        "points_in_roi": 0
+      },
+      {
+        "gt_token": "fcb2332977ed4203aa4b7e04a538e309",
+        "label": "barrier",
+        "category": "movable_object.barrier",
+        "center_lidar": [
+          7.8568981561163955,
+          25.556699206823797,
+          -0.5698740442214087
+        ],
+        "detected": false,
+        "raw_points_in_box": 4,
+        "after_ground_removal": 4,
+        "after_roi_filter": 4,
+        "points_removed_by_ground_filter": 0,
+        "points_removed_by_roi_filter": 0,
+        "points_in_roi": 4
+      },
+      {
+        "gt_token": "5b990ac640bf498ca7fd55eaf85d3e12",
+        "label": "barrier",
+        "category": "movable_object.barrier",
+        "center_lidar": [
+          7.960109492653107,
+          27.578948922702534,
+          -0.49667222294178776
+        ],
+        "detected": false,
+        "raw_points_in_box": 2,
+        "after_ground_removal": 2,
+        "after_roi_filter": 2,
+        "points_removed_by_ground_filter": 0,
+        "points_removed_by_roi_filter": 0,
+        "points_in_roi": 2
+      },
+      {
+        "gt_token": "16140fbf143d4e26a4a7613cbd3aa0e8",
+        "label": "car",
+        "category": "vehicle.car",
+        "center_lidar": [
+          5.979273659583959,
+          35.00872532616538,
+          0.04405876098249453
+        ],
+        "detected": false,
+        "raw_points_in_box": 4,
+        "after_ground_removal": 4,
+        "after_roi_filter": 4,
+        "points_removed_by_ground_filter": 0,
+        "points_removed_by_roi_filter": 0,
+        "points_in_roi": 4
+      },
+      {
+        "gt_token": "83d881a6b3d94ef3a3bc3b585cc514f8",
+        "label": "truck",
+        "category": "vehicle.truck",
+        "center_lidar": [
+          -4.498643300135364,
+          15.253322510367285,
+          0.396393503489445
+        ],
+        "detected": true,
+        "raw_points_in_box": 495,
+        "after_ground_removal": 468,
+        "after_roi_filter": 468,
+        "points_removed_by_ground_filter": 27,
+        "points_removed_by_roi_filter": 0,
+        "points_in_roi": 468
+      },
+      {
+        "gt_token": "a7bd5bb89e27455bbb3dba89a576b6a1",
+        "label": "barrier",
+        "category": "movable_object.barrier",
+        "center_lidar": [
+          9.531718126162897,
+          42.283333218852924,
+          0.010872626508430988
+        ],
+        "detected": false,
+        "raw_points_in_box": 3,
+        "after_ground_removal": 3,
+        "after_roi_filter": 0,
+        "points_removed_by_ground_filter": 0,
+        "points_removed_by_roi_filter": 3,
+        "points_in_roi": 0
+      },
+      {
+        "gt_token": "fbd9d8c939b24f0eb6496243a41e8c41",
+        "label": "barrier",
+        "category": "movable_object.barrier",
+        "center_lidar": [
+          8.132756389617546,
+          31.540962381986965,
+          -0.3816574525095868
+        ],
+        "detected": false,
+        "raw_points_in_box": 3,
+        "after_ground_removal": 3,
+        "after_roi_filter": 3,
+        "points_removed_by_ground_filter": 0,
+        "points_removed_by_roi_filter": 0,
+        "points_in_roi": 3
+      },
+      {
+        "gt_token": "198023a1fb5343a5b6fad033ab8b7057",
+        "label": "barrier",
+        "category": "movable_object.barrier",
+        "center_lidar": [
+          8.639245676785452,
+          19.389383675601685,
+          -0.856834834660469
+        ],
+        "detected": false,
+        "raw_points_in_box": 2,
+        "after_ground_removal": 2,
+        "after_roi_filter": 2,
+        "points_removed_by_ground_filter": 0,
+        "points_removed_by_roi_filter": 0,
+        "points_in_roi": 2
+      },
+      {
+        "gt_token": "cc636a58e27e446cbdd030c14f3718fd",
+        "label": "barrier",
+        "category": "movable_object.barrier",
+        "center_lidar": [
+          7.090605352181969,
+          15.518719131046137,
+          -0.8494099755922975
+        ],
+        "detected": false,
+        "raw_points_in_box": 19,
+        "after_ground_removal": 19,
+        "after_roi_filter": 19,
+        "points_removed_by_ground_filter": 0,
+        "points_removed_by_roi_filter": 0,
+        "points_in_roi": 19
+      },
+      {
+        "gt_token": "5acb6c71bcd64aa188804411b28c4c8f",
+        "label": "barrier",
+        "category": "movable_object.barrier",
+        "center_lidar": [
+          9.56223706540548,
+          44.274557907459695,
+          0.11412878288977657
+        ],
+        "detected": false,
+        "raw_points_in_box": 1,
+        "after_ground_removal": 1,
+        "after_roi_filter": 0,
+        "points_removed_by_ground_filter": 0,
+        "points_removed_by_roi_filter": 1,
+        "points_in_roi": 0
+      },
+      {
+        "gt_token": "49b74a5f193c4759b203123b58ca176d",
+        "label": "pedestrian",
+        "category": "human.pedestrian.adult",
+        "center_lidar": [
+          -4.268840078259594,
+          13.088243040416518,
+          0.9895624237921767
+        ],
+        "detected": false,
+        "raw_points_in_box": 0,
+        "after_ground_removal": 0,
+        "after_roi_filter": 0,
+        "points_removed_by_ground_filter": 0,
+        "points_removed_by_roi_filter": 0,
+        "points_in_roi": 0
+      },
+      {
+        "gt_token": "77519174b48f4853a895f58bb8f98661",
+        "label": "pedestrian",
+        "category": "human.pedestrian.adult",
+        "center_lidar": [
+          20.16839990181565,
+          35.88605124766232,
+          -0.05447402281337179
+        ],
+        "detected": false,
+        "raw_points_in_box": 2,
+        "after_ground_removal": 2,
+        "after_roi_filter": 0,
+        "points_removed_by_ground_filter": 0,
+        "points_removed_by_roi_filter": 2,
+        "points_in_roi": 0
+      },
+      {
+        "gt_token": "c5e9455e98bb42c0af7d1990db1df0c9",
+        "label": "barrier",
+        "category": "movable_object.barrier",
+        "center_lidar": [
+          8.544393730274928,
+          17.306768805967973,
+          -0.8902476020366781
+        ],
+        "detected": false,
+        "raw_points_in_box": 5,
+        "after_ground_removal": 5,
+        "after_roi_filter": 5,
+        "points_removed_by_ground_filter": 0,
+        "points_removed_by_roi_filter": 0,
+        "points_in_roi": 5
+      },
+      {
+        "gt_token": "fcc5b4b5c4724179ab24962a39ca6d65",
+        "label": "pedestrian",
+        "category": "human.pedestrian.adult",
+        "center_lidar": [
+          20.736904979292817,
+          42.1586392283441,
+          0.10630844355103664
+        ],
+        "detected": false,
+        "raw_points_in_box": 3,
+        "after_ground_removal": 3,
+        "after_roi_filter": 0,
+        "points_removed_by_ground_filter": 0,
+        "points_removed_by_roi_filter": 3,
+        "points_in_roi": 0
+      },
+      {
+        "gt_token": "316d20eb238c43ef9ee195642dd6e3fe",
+        "label": "barrier",
+        "category": "movable_object.barrier",
+        "center_lidar": [
+          9.195374172882504,
+          35.77399911830276,
+          -0.3098769837917072
+        ],
+        "detected": false,
+        "raw_points_in_box": 2,
+        "after_ground_removal": 2,
+        "after_roi_filter": 1,
+        "points_removed_by_ground_filter": 0,
+        "points_removed_by_roi_filter": 1,
+        "points_in_roi": 1
+      },
+      {
+        "gt_token": "cda0a9085607438c9b1ea87f4360dd64",
+        "label": "car",
+        "category": "vehicle.car",
+        "center_lidar": [
+          3.301175120221583,
+          40.34049474161299,
+          0.14580409975193173
+        ],
+        "detected": true,
+        "raw_points_in_box": 5,
+        "after_ground_removal": 5,
+        "after_roi_filter": 5,
+        "points_removed_by_ground_filter": 0,
+        "points_removed_by_roi_filter": 0,
+        "points_in_roi": 5
+      },
+      {
+        "gt_token": "e865152aaa194f22b97ad0078c012b21",
+        "label": "barrier",
+        "category": "movable_object.barrier",
+        "center_lidar": [
+          8.223002939940425,
+          33.59882990334035,
+          -0.2789889338989361
+        ],
+        "detected": false,
+        "raw_points_in_box": 5,
+        "after_ground_removal": 5,
+        "after_roi_filter": 5,
+        "points_removed_by_ground_filter": 0,
+        "points_removed_by_roi_filter": 0,
+        "points_in_roi": 5
+      },
+      {
+        "gt_token": "7962506dbc24423aa540a5e4c7083dad",
+        "label": "barrier",
+        "category": "movable_object.barrier",
+        "center_lidar": [
+          9.60979252337494,
+          46.28874537626153,
+          0.1728937294046641
+        ],
+        "detected": false,
+        "raw_points_in_box": 1,
+        "after_ground_removal": 1,
+        "after_roi_filter": 0,
+        "points_removed_by_ground_filter": 0,
+        "points_removed_by_roi_filter": 1,
+        "points_in_roi": 0
+      },
+      {
+        "gt_token": "f1ae3f713ba946069fa084a6b8626fbf",
+        "label": "barrier",
+        "category": "movable_object.barrier",
+        "center_lidar": [
+          6.9858421001025,
+          11.420882427050678,
+          -0.944204534518998
+        ],
+        "detected": false,
+        "raw_points_in_box": 50,
+        "after_ground_removal": 50,
+        "after_roi_filter": 50,
+        "points_removed_by_ground_filter": 0,
+        "points_removed_by_roi_filter": 0,
+        "points_in_roi": 50
+      },
+      {
+        "gt_token": "d7af8ede316546f68d4ab4f3dbf03f88",
+        "label": "barrier",
+        "category": "movable_object.barrier",
+        "center_lidar": [
+          7.725086474877072,
+          23.563319219623907,
+          -0.6146055467654745
+        ],
+        "detected": false,
+        "raw_points_in_box": 4,
+        "after_ground_removal": 4,
+        "after_roi_filter": 4,
+        "points_removed_by_ground_filter": 0,
+        "points_removed_by_roi_filter": 0,
+        "points_in_roi": 4
+      },
+      {
+        "gt_token": "bc638d33e89848f58c0b3ccf3900c8bb",
+        "label": "barrier",
+        "category": "movable_object.barrier",
+        "center_lidar": [
+          7.19791594370355,
+          17.52401380647963,
+          -0.7678581416138489
+        ],
+        "detected": false,
+        "raw_points_in_box": 13,
+        "after_ground_removal": 13,
+        "after_roi_filter": 13,
+        "points_removed_by_ground_filter": 0,
+        "points_removed_by_roi_filter": 0,
+        "points_in_roi": 13
+      },
+      {
+        "gt_token": "67c5dbb3ddcc4aff8ec5140930723c37",
+        "label": "pedestrian",
+        "category": "human.pedestrian.adult",
+        "center_lidar": [
+          21.657446854457806,
+          41.97279424244561,
+          -0.08848708330761759
+        ],
+        "detected": false,
+        "raw_points_in_box": 2,
+        "after_ground_removal": 2,
+        "after_roi_filter": 0,
+        "points_removed_by_ground_filter": 0,
+        "points_removed_by_roi_filter": 2,
+        "points_in_roi": 0
+      },
+      {
+        "gt_token": "de6bd5ffbed24aa59c8891f8d9c32c44",
+        "label": "pedestrian",
+        "category": "human.pedestrian.adult",
+        "center_lidar": [
+          20.743517206720906,
+          37.622374408917956,
+          -0.04957858761530664
+        ],
+        "detected": false,
+        "raw_points_in_box": 1,
+        "after_ground_removal": 1,
+        "after_roi_filter": 0,
+        "points_removed_by_ground_filter": 0,
+        "points_removed_by_roi_filter": 1,
+        "points_in_roi": 0
+      },
+      {
+        "gt_token": "b7cbc6d0e80e4dfda7164871ece6cb71",
+        "label": "truck",
+        "category": "vehicle.truck",
+        "center_lidar": [
+          6.7049641277199195,
+          45.76778987864831,
+          0.648678724231852
+        ],
+        "detected": false,
+        "raw_points_in_box": 7,
+        "after_ground_removal": 7,
+        "after_roi_filter": 4,
+        "points_removed_by_ground_filter": 0,
+        "points_removed_by_roi_filter": 3,
+        "points_in_roi": 4
+      },
+      {
+        "gt_token": "05de82bdb8484623906bb9d97ae87542",
+        "label": "pedestrian",
+        "category": "human.pedestrian.adult",
+        "center_lidar": [
+          -2.518171831690767,
+          16.85645827443927,
+          -0.472614255181267
+        ],
+        "detected": false,
+        "raw_points_in_box": 13,
+        "after_ground_removal": 12,
+        "after_roi_filter": 12,
+        "points_removed_by_ground_filter": 1,
+        "points_removed_by_roi_filter": 0,
+        "points_in_roi": 12
+      },
+      {
+        "gt_token": "bca4bbfdef3d4de980842f28be80b3ca",
+        "label": "barrier",
+        "category": "movable_object.barrier",
+        "center_lidar": [
+          9.134303705769733,
+          33.74139511503932,
+          -0.3780852234969391
+        ],
+        "detected": false,
+        "raw_points_in_box": 1,
+        "after_ground_removal": 1,
+        "after_roi_filter": 1,
+        "points_removed_by_ground_filter": 0,
+        "points_removed_by_roi_filter": 0,
+        "points_in_roi": 1
+      },
+      {
+        "gt_token": "adf1594def9e4722b952fea33b307937",
+        "label": "barrier",
+        "category": "movable_object.barrier",
+        "center_lidar": [
+          7.348532516815668,
+          19.5358624385301,
+          -0.7197672940395443
+        ],
+        "detected": false,
+        "raw_points_in_box": 9,
+        "after_ground_removal": 9,
+        "after_roi_filter": 9,
+        "points_removed_by_ground_filter": 0,
+        "points_removed_by_roi_filter": 0,
+        "points_in_roi": 9
+      },
+      {
+        "gt_token": "49f76277d07541c5a584aa14c9d28754",
+        "label": "car",
+        "category": "vehicle.car",
+        "center_lidar": [
+          -2.0532357597925044,
+          38.02608691364479,
+          0.27026105546876067
+        ],
+        "detected": true,
+        "raw_points_in_box": 15,
+        "after_ground_removal": 15,
+        "after_roi_filter": 15,
+        "points_removed_by_ground_filter": 0,
+        "points_removed_by_roi_filter": 0,
+        "points_in_roi": 15
+      },
+      {
+        "gt_token": "15a3b4d60b514db5a3468e2aef72a90c",
+        "label": "barrier",
+        "category": "movable_object.barrier",
+        "center_lidar": [
+          7.5188741291107215,
+          21.55476208768533,
+          -0.6937491895439949
+        ],
+        "detected": false,
+        "raw_points_in_box": 6,
+        "after_ground_removal": 6,
+        "after_roi_filter": 6,
+        "points_removed_by_ground_filter": 0,
+        "points_removed_by_roi_filter": 0,
+        "points_in_roi": 6
+      },
+      {
+        "gt_token": "18cc2837f2b9457c80af0761a0b83ccc",
+        "label": "barrier",
+        "category": "movable_object.barrier",
+        "center_lidar": [
+          8.038313881168182,
+          29.55307584648087,
+          -0.43477745393517425
+        ],
+        "detected": false,
+        "raw_points_in_box": 2,
+        "after_ground_removal": 2,
+        "after_roi_filter": 2,
+        "points_removed_by_ground_filter": 0,
+        "points_removed_by_roi_filter": 0,
+        "points_in_roi": 2
+      },
+      {
+        "gt_token": "2bfcc693ae9946daba1d9f2724478fd4",
+        "label": "barrier",
+        "category": "movable_object.barrier",
+        "center_lidar": [
+          7.0356308155549705,
+          13.45482235481468,
+          -0.9318168769068079
+        ],
+        "detected": false,
+        "raw_points_in_box": 27,
+        "after_ground_removal": 26,
+        "after_roi_filter": 26,
+        "points_removed_by_ground_filter": 1,
+        "points_removed_by_roi_filter": 0,
+        "points_in_roi": 26
+      }
+    ],
+    "candidates": [
+      {
+        "candidate_id": "C00",
+        "points_count": 5,
+        "projected_to_camera": false,
+        "matched": false,
+        "predicted_label": null,
+        "best_match": null,
+        "best_eligible_match": null
+      },
+      {
+        "candidate_id": "C01",
+        "points_count": 412,
+        "projected_to_camera": true,
+        "matched": true,
+        "predicted_label": "truck",
+        "best_match": {
+          "gt_token": "83d881a6b3d94ef3a3bc3b585cc514f8",
+          "gt_label": "truck",
+          "gt_category": "vehicle.truck",
+          "intersection_points": 394,
+          "candidate_purity": 0.9563106796116505,
+          "gt_point_coverage": 0.8418803418803419,
+          "point_iou": 0.8106995884773662,
+          "eligible_by_thresholds": true
+        },
+        "best_eligible_match": {
+          "gt_token": "83d881a6b3d94ef3a3bc3b585cc514f8",
+          "gt_label": "truck",
+          "gt_category": "vehicle.truck",
+          "intersection_points": 394,
+          "candidate_purity": 0.9563106796116505,
+          "gt_point_coverage": 0.8418803418803419,
+          "point_iou": 0.8106995884773662,
+          "eligible_by_thresholds": true
+        }
+      },
+      {
+        "candidate_id": "C02",
+        "points_count": 50,
+        "projected_to_camera": true,
+        "matched": true,
+        "predicted_label": "truck",
+        "best_match": {
+          "gt_token": "83d881a6b3d94ef3a3bc3b585cc514f8",
+          "gt_label": "truck",
+          "gt_category": "vehicle.truck",
+          "intersection_points": 50,
+          "candidate_purity": 1.0,
+          "gt_point_coverage": 0.10683760683760683,
+          "point_iou": 0.10683760683760683,
+          "eligible_by_thresholds": true
+        },
+        "best_eligible_match": {
+          "gt_token": "83d881a6b3d94ef3a3bc3b585cc514f8",
+          "gt_label": "truck",
+          "gt_category": "vehicle.truck",
+          "intersection_points": 50,
+          "candidate_purity": 1.0,
+          "gt_point_coverage": 0.10683760683760683,
+          "point_iou": 0.10683760683760683,
+          "eligible_by_thresholds": true
+        }
+      },
+      {
+        "candidate_id": "C03",
+        "points_count": 15,
+        "projected_to_camera": true,
+        "matched": true,
+        "predicted_label": "car",
+        "best_match": {
+          "gt_token": "49f76277d07541c5a584aa14c9d28754",
+          "gt_label": "car",
+          "gt_category": "vehicle.car",
+          "intersection_points": 15,
+          "candidate_purity": 1.0,
+          "gt_point_coverage": 1.0,
+          "point_iou": 1.0,
+          "eligible_by_thresholds": true
+        },
+        "best_eligible_match": {
+          "gt_token": "49f76277d07541c5a584aa14c9d28754",
+          "gt_label": "car",
+          "gt_category": "vehicle.car",
+          "intersection_points": 15,
+          "candidate_purity": 1.0,
+          "gt_point_coverage": 1.0,
+          "point_iou": 1.0,
+          "eligible_by_thresholds": true
+        }
+      },
+      {
+        "candidate_id": "C04",
+        "points_count": 5,
+        "projected_to_camera": true,
+        "matched": true,
+        "predicted_label": "car",
+        "best_match": {
+          "gt_token": "cda0a9085607438c9b1ea87f4360dd64",
+          "gt_label": "car",
+          "gt_category": "vehicle.car",
+          "intersection_points": 5,
+          "candidate_purity": 1.0,
+          "gt_point_coverage": 1.0,
+          "point_iou": 1.0,
+          "eligible_by_thresholds": true
+        },
+        "best_eligible_match": {
+          "gt_token": "cda0a9085607438c9b1ea87f4360dd64",
+          "gt_label": "car",
+          "gt_category": "vehicle.car",
+          "intersection_points": 5,
+          "candidate_purity": 1.0,
+          "gt_point_coverage": 1.0,
+          "point_iou": 1.0,
+          "eligible_by_thresholds": true
+        }
+      },
+      {
+        "candidate_id": "C05",
+        "points_count": 142,
+        "projected_to_camera": false,
+        "matched": false,
+        "predicted_label": null,
+        "best_match": null,
+        "best_eligible_match": null
+      },
+      {
+        "candidate_id": "C06",
+        "points_count": 203,
+        "projected_to_camera": true,
+        "matched": false,
+        "predicted_label": null,
+        "best_match": {
+          "gt_token": "f1ae3f713ba946069fa084a6b8626fbf",
+          "gt_label": "barrier",
+          "gt_category": "movable_object.barrier",
+          "intersection_points": 50,
+          "candidate_purity": 0.24630541871921183,
+          "gt_point_coverage": 1.0,
+          "point_iou": 0.24630541871921183,
+          "eligible_by_thresholds": false
+        },
+        "best_eligible_match": null
+      }
+    ]
+  },
+  "box_iou_evaluation": {
+    "description": "Oriented 3D box IoU from rotated XY footprint intersection and vertical overlap. Recall matching uses maximum-cardinality one-to-one bipartite matching at each threshold.",
+    "threshold_results": {
+      "0.10": {
+        "iou_threshold": 0.1,
+        "matching_algorithm": "maximum_cardinality_bipartite_matching",
+        "matched_gt_objects": 3,
+        "total_gt_objects": 32,
+        "unmatched_gt_objects": 29,
+        "recall": 0.09375,
+        "matched_candidates": 3,
+        "matches": [
+          {
+            "candidate_id": "C03",
+            "gt_token": "49f76277d07541c5a584aa14c9d28754",
+            "gt_label": "car",
+            "iou_3d": 0.6987788689833385
+          },
+          {
+            "candidate_id": "C04",
+            "gt_token": "cda0a9085607438c9b1ea87f4360dd64",
+            "gt_label": "car",
+            "iou_3d": 0.6947821832555722
+          },
+          {
+            "candidate_id": "C01",
+            "gt_token": "83d881a6b3d94ef3a3bc3b585cc514f8",
+            "gt_label": "truck",
+            "iou_3d": 0.5421980307633034
+          }
+        ],
+        "by_class": {
+          "pedestrian": {
+            "total": 8,
+            "detected": 0
+          },
+          "barrier": {
+            "total": 19,
+            "detected": 0
+          },
+          "car": {
+            "total": 3,
+            "detected": 2
+          },
+          "truck": {
+            "total": 2,
+            "detected": 1
+          }
+        }
+      },
+      "0.25": {
+        "iou_threshold": 0.25,
+        "matching_algorithm": "maximum_cardinality_bipartite_matching",
+        "matched_gt_objects": 3,
+        "total_gt_objects": 32,
+        "unmatched_gt_objects": 29,
+        "recall": 0.09375,
+        "matched_candidates": 3,
+        "matches": [
+          {
+            "candidate_id": "C03",
+            "gt_token": "49f76277d07541c5a584aa14c9d28754",
+            "gt_label": "car",
+            "iou_3d": 0.6987788689833385
+          },
+          {
+            "candidate_id": "C04",
+            "gt_token": "cda0a9085607438c9b1ea87f4360dd64",
+            "gt_label": "car",
+            "iou_3d": 0.6947821832555722
+          },
+          {
+            "candidate_id": "C01",
+            "gt_token": "83d881a6b3d94ef3a3bc3b585cc514f8",
+            "gt_label": "truck",
+            "iou_3d": 0.5421980307633034
+          }
+        ],
+        "by_class": {
+          "pedestrian": {
+            "total": 8,
+            "detected": 0
+          },
+          "barrier": {
+            "total": 19,
+            "detected": 0
+          },
+          "car": {
+            "total": 3,
+            "detected": 2
+          },
+          "truck": {
+            "total": 2,
+            "detected": 1
+          }
+        }
+      },
+      "0.50": {
+        "iou_threshold": 0.5,
+        "matching_algorithm": "maximum_cardinality_bipartite_matching",
+        "matched_gt_objects": 3,
+        "total_gt_objects": 32,
+        "unmatched_gt_objects": 29,
+        "recall": 0.09375,
+        "matched_candidates": 3,
+        "matches": [
+          {
+            "candidate_id": "C03",
+            "gt_token": "49f76277d07541c5a584aa14c9d28754",
+            "gt_label": "car",
+            "iou_3d": 0.6987788689833385
+          },
+          {
+            "candidate_id": "C04",
+            "gt_token": "cda0a9085607438c9b1ea87f4360dd64",
+            "gt_label": "car",
+            "iou_3d": 0.6947821832555722
+          },
+          {
+            "candidate_id": "C01",
+            "gt_token": "83d881a6b3d94ef3a3bc3b585cc514f8",
+            "gt_label": "truck",
+            "iou_3d": 0.5421980307633034
+          }
+        ],
+        "by_class": {
+          "pedestrian": {
+            "total": 8,
+            "detected": 0
+          },
+          "barrier": {
+            "total": 19,
+            "detected": 0
+          },
+          "car": {
+            "total": 3,
+            "detected": 2
+          },
+          "truck": {
+            "total": 2,
+            "detected": 1
+          }
+        }
+      }
+    },
+    "best_candidate_per_candidate": [
+      {
+        "candidate_id": "C00",
+        "projected_to_camera": false,
+        "is_degenerate_geometry": false,
+        "best_match": null
+      },
+      {
+        "candidate_id": "C01",
+        "projected_to_camera": true,
+        "is_degenerate_geometry": false,
+        "best_match": {
+          "gt_token": "83d881a6b3d94ef3a3bc3b585cc514f8",
+          "gt_label": "truck",
+          "gt_category": "vehicle.truck",
+          "iou_3d": 0.5421980307633034,
+          "candidate_center": [
+            -4.206948280334473,
+            13.724468231201172,
+            0.31017059427207583
+          ],
+          "gt_center": [
+            -4.498643300135364,
+            15.253322510367285,
+            0.396393503489445
+          ],
+          "center_distance_m": 1.5588187135055458,
+          "candidate_dimensions_lwh": [
+            7.5,
+            2.96907218950817,
+            3.4
+          ],
+          "gt_dimensions_lwh": [
+            10.201,
+            2.877,
+            3.595
+          ],
+          "candidate_major_axis_deg": 82.68940760919483,
+          "gt_major_axis_deg": 91.39851486993982,
+          "major_axis_difference_deg": 8.709107260744975,
+          "yaw_difference_deg": 8.709107260744975
+        }
+      },
+      {
+        "candidate_id": "C02",
+        "projected_to_camera": true,
+        "is_degenerate_geometry": false,
+        "best_match": {
+          "gt_token": "83d881a6b3d94ef3a3bc3b585cc514f8",
+          "gt_label": "truck",
+          "gt_category": "vehicle.truck",
+          "iou_3d": 0.018091842141320917,
+          "candidate_center": [
+            -4.277621746063232,
+            18.081195831298828,
+            0.2581570457817841
+          ],
+          "gt_center": [
+            -4.498643300135364,
+            15.253322510367285,
+            0.396393503489445
+          ],
+          "center_distance_m": 2.839863969425369,
+          "candidate_dimensions_lwh": [
+            1.877288198985053,
+            0.3320497609476294,
+            3.062176165699616
+          ],
+          "gt_dimensions_lwh": [
+            10.201,
+            2.877,
+            3.595
+          ],
+          "candidate_major_axis_deg": 174.6171402087914,
+          "gt_major_axis_deg": 91.39851486993982,
+          "major_axis_difference_deg": 83.21862533885158,
+          "yaw_difference_deg": 83.21862533885158
+        }
+      },
+      {
+        "candidate_id": "C03",
+        "projected_to_camera": true,
+        "is_degenerate_geometry": false,
+        "best_match": {
+          "gt_token": "49f76277d07541c5a584aa14c9d28754",
+          "gt_label": "car",
+          "gt_category": "vehicle.car",
+          "iou_3d": 0.6987788689833385,
+          "candidate_center": [
+            -2.0849528312683105,
+            37.81709289550781,
+            0.017262705748144813
+          ],
+          "gt_center": [
+            -2.0532357597925044,
+            38.02608691364479,
+            0.27026105546876067
+          ],
+          "center_distance_m": 0.3296856642339723,
+          "candidate_dimensions_lwh": [
+            4.4,
+            1.75,
+            1.703607542147509
+          ],
+          "gt_dimensions_lwh": [
+            4.727,
+            1.907,
+            1.957
+          ],
+          "candidate_major_axis_deg": 89.99999999999999,
+          "gt_major_axis_deg": 90.55408255535134,
+          "major_axis_difference_deg": 0.5540825553513602,
+          "yaw_difference_deg": 0.5540825553513602
+        }
+      },
+      {
+        "candidate_id": "C04",
+        "projected_to_camera": true,
+        "is_degenerate_geometry": false,
+        "best_match": {
+          "gt_token": "cda0a9085607438c9b1ea87f4360dd64",
+          "gt_label": "car",
+          "gt_category": "vehicle.car",
+          "iou_3d": 0.6947821832555722,
+          "candidate_center": [
+            3.1640853881835938,
+            40.35649871826172,
+            -0.0713733357889702
+          ],
+          "gt_center": [
+            3.301175120221583,
+            40.34049474161299,
+            0.14580409975193173
+          ],
+          "center_distance_m": 0.25732423206325383,
+          "candidate_dimensions_lwh": [
+            4.4,
+            1.75,
+            1.55
+          ],
+          "gt_dimensions_lwh": [
+            4.115,
+            1.847,
+            1.526
+          ],
+          "candidate_major_axis_deg": 89.99999999999999,
+          "gt_major_axis_deg": 86.10302933238417,
+          "major_axis_difference_deg": 3.896970667615822,
+          "yaw_difference_deg": 3.896970667615822
+        }
+      },
+      {
+        "candidate_id": "C05",
+        "projected_to_camera": false,
+        "is_degenerate_geometry": true,
+        "best_match": null
+      },
+      {
+        "candidate_id": "C06",
+        "projected_to_camera": true,
+        "is_degenerate_geometry": true,
+        "best_match": {
+          "gt_token": "d7af8ede316546f68d4ab4f3dbf03f88",
+          "gt_label": "barrier",
+          "gt_category": "movable_object.barrier",
+          "iou_3d": 0.044555619839565845,
+          "candidate_center": [
+            7.739365577697754,
+            16.968494415283203,
+            -0.934166448481111
+          ],
+          "gt_center": [
+            7.725086474877072,
+            23.563319219623907,
+            -0.6146055467654745
+          ],
+          "center_distance_m": 6.602578076980996,
+          "candidate_dimensions_lwh": [
+            17.88360993181899,
+            0.8,
+            1.1
+          ],
+          "gt_dimensions_lwh": [
+            0.649,
+            1.945,
+            1.11
+          ],
+          "candidate_major_axis_deg": 87.87571052720396,
+          "gt_major_axis_deg": 85.08861771547109,
+          "major_axis_difference_deg": 2.787092811732878,
+          "yaw_difference_deg": 2.787092811732878
+        }
+      }
+    ],
+    "best_candidate_per_ground_truth": [
+      {
+        "gt_token": "6b89da9bf1f84fd6a5fbe1c3b236f809",
+        "label": "pedestrian",
+        "category": "human.pedestrian.adult",
+        "best_candidate_iou_3d": 0.0,
+        "matched_at_thresholds": {
+          "0.10": false,
+          "0.25": false,
+          "0.50": false
+        }
+      },
+      {
+        "gt_token": "70af124fceeb433ea73a79537e4bea9e",
+        "label": "pedestrian",
+        "category": "human.pedestrian.adult",
+        "best_candidate_iou_3d": 0.0,
+        "matched_at_thresholds": {
+          "0.10": false,
+          "0.25": false,
+          "0.50": false
+        }
+      },
+      {
+        "gt_token": "fcb2332977ed4203aa4b7e04a538e309",
+        "label": "barrier",
+        "category": "movable_object.barrier",
+        "best_candidate_iou_3d": 0.03355430031041945,
+        "matched_at_thresholds": {
+          "0.10": false,
+          "0.25": false,
+          "0.50": false
+        }
+      },
+      {
+        "gt_token": "5b990ac640bf498ca7fd55eaf85d3e12",
+        "label": "barrier",
+        "category": "movable_object.barrier",
+        "best_candidate_iou_3d": 0.0,
+        "matched_at_thresholds": {
+          "0.10": false,
+          "0.25": false,
+          "0.50": false
+        }
+      },
+      {
+        "gt_token": "16140fbf143d4e26a4a7613cbd3aa0e8",
+        "label": "car",
+        "category": "vehicle.car",
+        "best_candidate_iou_3d": 0.0,
+        "matched_at_thresholds": {
+          "0.10": false,
+          "0.25": false,
+          "0.50": false
+        }
+      },
+      {
+        "gt_token": "83d881a6b3d94ef3a3bc3b585cc514f8",
+        "label": "truck",
+        "category": "vehicle.truck",
+        "best_candidate_iou_3d": 0.5421980307633034,
+        "matched_at_thresholds": {
+          "0.10": true,
+          "0.25": true,
+          "0.50": true
+        }
+      },
+      {
+        "gt_token": "a7bd5bb89e27455bbb3dba89a576b6a1",
+        "label": "barrier",
+        "category": "movable_object.barrier",
+        "best_candidate_iou_3d": 0.0,
+        "matched_at_thresholds": {
+          "0.10": false,
+          "0.25": false,
+          "0.50": false
+        }
+      },
+      {
+        "gt_token": "fbd9d8c939b24f0eb6496243a41e8c41",
+        "label": "barrier",
+        "category": "movable_object.barrier",
+        "best_candidate_iou_3d": 0.0,
+        "matched_at_thresholds": {
+          "0.10": false,
+          "0.25": false,
+          "0.50": false
+        }
+      },
+      {
+        "gt_token": "198023a1fb5343a5b6fad033ab8b7057",
+        "label": "barrier",
+        "category": "movable_object.barrier",
+        "best_candidate_iou_3d": 0.0,
+        "matched_at_thresholds": {
+          "0.10": false,
+          "0.25": false,
+          "0.50": false
+        }
+      },
+      {
+        "gt_token": "cc636a58e27e446cbdd030c14f3718fd",
+        "label": "barrier",
+        "category": "movable_object.barrier",
+        "best_candidate_iou_3d": 0.01880847611567568,
+        "matched_at_thresholds": {
+          "0.10": false,
+          "0.25": false,
+          "0.50": false
+        }
+      },
+      {
+        "gt_token": "5acb6c71bcd64aa188804411b28c4c8f",
+        "label": "barrier",
+        "category": "movable_object.barrier",
+        "best_candidate_iou_3d": 0.0,
+        "matched_at_thresholds": {
+          "0.10": false,
+          "0.25": false,
+          "0.50": false
+        }
+      },
+      {
+        "gt_token": "49b74a5f193c4759b203123b58ca176d",
+        "label": "pedestrian",
+        "category": "human.pedestrian.adult",
+        "best_candidate_iou_3d": 0.013308541231349611,
+        "matched_at_thresholds": {
+          "0.10": false,
+          "0.25": false,
+          "0.50": false
+        }
+      },
+      {
+        "gt_token": "77519174b48f4853a895f58bb8f98661",
+        "label": "pedestrian",
+        "category": "human.pedestrian.adult",
+        "best_candidate_iou_3d": 0.0,
+        "matched_at_thresholds": {
+          "0.10": false,
+          "0.25": false,
+          "0.50": false
+        }
+      },
+      {
+        "gt_token": "c5e9455e98bb42c0af7d1990db1df0c9",
+        "label": "barrier",
+        "category": "movable_object.barrier",
+        "best_candidate_iou_3d": 2.553216517671838e-06,
+        "matched_at_thresholds": {
+          "0.10": false,
+          "0.25": false,
+          "0.50": false
+        }
+      },
+      {
+        "gt_token": "fcc5b4b5c4724179ab24962a39ca6d65",
+        "label": "pedestrian",
+        "category": "human.pedestrian.adult",
+        "best_candidate_iou_3d": 0.0,
+        "matched_at_thresholds": {
+          "0.10": false,
+          "0.25": false,
+          "0.50": false
+        }
+      },
+      {
+        "gt_token": "316d20eb238c43ef9ee195642dd6e3fe",
+        "label": "barrier",
+        "category": "movable_object.barrier",
+        "best_candidate_iou_3d": 0.0,
+        "matched_at_thresholds": {
+          "0.10": false,
+          "0.25": false,
+          "0.50": false
+        }
+      },
+      {
+        "gt_token": "cda0a9085607438c9b1ea87f4360dd64",
+        "label": "car",
+        "category": "vehicle.car",
+        "best_candidate_iou_3d": 0.6947821832555722,
+        "matched_at_thresholds": {
+          "0.10": true,
+          "0.25": true,
+          "0.50": true
+        }
+      },
+      {
+        "gt_token": "e865152aaa194f22b97ad0078c012b21",
+        "label": "barrier",
+        "category": "movable_object.barrier",
+        "best_candidate_iou_3d": 0.0,
+        "matched_at_thresholds": {
+          "0.10": false,
+          "0.25": false,
+          "0.50": false
+        }
+      },
+      {
+        "gt_token": "7962506dbc24423aa540a5e4c7083dad",
+        "label": "barrier",
+        "category": "movable_object.barrier",
+        "best_candidate_iou_3d": 0.0,
+        "matched_at_thresholds": {
+          "0.10": false,
+          "0.25": false,
+          "0.50": false
+        }
+      },
+      {
+        "gt_token": "f1ae3f713ba946069fa084a6b8626fbf",
+        "label": "barrier",
+        "category": "movable_object.barrier",
+        "best_candidate_iou_3d": 0.021723523277800156,
+        "matched_at_thresholds": {
+          "0.10": false,
+          "0.25": false,
+          "0.50": false
+        }
+      },
+      {
+        "gt_token": "d7af8ede316546f68d4ab4f3dbf03f88",
+        "label": "barrier",
+        "category": "movable_object.barrier",
+        "best_candidate_iou_3d": 0.044555619839565845,
+        "matched_at_thresholds": {
+          "0.10": false,
+          "0.25": false,
+          "0.50": false
+        }
+      },
+      {
+        "gt_token": "bc638d33e89848f58c0b3ccf3900c8bb",
+        "label": "barrier",
+        "category": "movable_object.barrier",
+        "best_candidate_iou_3d": 0.021349468206413168,
+        "matched_at_thresholds": {
+          "0.10": false,
+          "0.25": false,
+          "0.50": false
+        }
+      },
+      {
+        "gt_token": "67c5dbb3ddcc4aff8ec5140930723c37",
+        "label": "pedestrian",
+        "category": "human.pedestrian.adult",
+        "best_candidate_iou_3d": 0.0,
+        "matched_at_thresholds": {
+          "0.10": false,
+          "0.25": false,
+          "0.50": false
+        }
+      },
+      {
+        "gt_token": "de6bd5ffbed24aa59c8891f8d9c32c44",
+        "label": "pedestrian",
+        "category": "human.pedestrian.adult",
+        "best_candidate_iou_3d": 0.0,
+        "matched_at_thresholds": {
+          "0.10": false,
+          "0.25": false,
+          "0.50": false
+        }
+      },
+      {
+        "gt_token": "b7cbc6d0e80e4dfda7164871ece6cb71",
+        "label": "truck",
+        "category": "vehicle.truck",
+        "best_candidate_iou_3d": 0.0,
+        "matched_at_thresholds": {
+          "0.10": false,
+          "0.25": false,
+          "0.50": false
+        }
+      },
+      {
+        "gt_token": "05de82bdb8484623906bb9d97ae87542",
+        "label": "pedestrian",
+        "category": "human.pedestrian.adult",
+        "best_candidate_iou_3d": 0.00808400305404799,
+        "matched_at_thresholds": {
+          "0.10": false,
+          "0.25": false,
+          "0.50": false
+        }
+      },
+      {
+        "gt_token": "bca4bbfdef3d4de980842f28be80b3ca",
+        "label": "barrier",
+        "category": "movable_object.barrier",
+        "best_candidate_iou_3d": 0.0,
+        "matched_at_thresholds": {
+          "0.10": false,
+          "0.25": false,
+          "0.50": false
+        }
+      },
+      {
+        "gt_token": "adf1594def9e4722b952fea33b307937",
+        "label": "barrier",
+        "category": "movable_object.barrier",
+        "best_candidate_iou_3d": 0.03023333200922158,
+        "matched_at_thresholds": {
+          "0.10": false,
+          "0.25": false,
+          "0.50": false
+        }
+      },
+      {
+        "gt_token": "49f76277d07541c5a584aa14c9d28754",
+        "label": "car",
+        "category": "vehicle.car",
+        "best_candidate_iou_3d": 0.6987788689833385,
+        "matched_at_thresholds": {
+          "0.10": true,
+          "0.25": true,
+          "0.50": true
+        }
+      },
+      {
+        "gt_token": "15a3b4d60b514db5a3468e2aef72a90c",
+        "label": "barrier",
+        "category": "movable_object.barrier",
+        "best_candidate_iou_3d": 0.03804628891194409,
+        "matched_at_thresholds": {
+          "0.10": false,
+          "0.25": false,
+          "0.50": false
+        }
+      },
+      {
+        "gt_token": "18cc2837f2b9457c80af0761a0b83ccc",
+        "label": "barrier",
+        "category": "movable_object.barrier",
+        "best_candidate_iou_3d": 0.0,
+        "matched_at_thresholds": {
+          "0.10": false,
+          "0.25": false,
+          "0.50": false
+        }
+      },
+      {
+        "gt_token": "2bfcc693ae9946daba1d9f2724478fd4",
+        "label": "barrier",
+        "category": "movable_object.barrier",
+        "best_candidate_iou_3d": 0.018577543172100273,
+        "matched_at_thresholds": {
+          "0.10": false,
+          "0.25": false,
+          "0.50": false
+        }
+      }
+    ]
+  }
+}

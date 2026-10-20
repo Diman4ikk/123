@@ -1,0 +1,448 @@
+{
+  "scene": "scene-0061",
+  "sample_token": "023c4df2d451409881d8e6ea82f14704",
+  "candidates": [
+    {
+      "candidate_id": 0,
+      "center_lidar_xyz": [
+        -4.685625076293945,
+        14.560400009155273,
+        -0.6128536922567739
+      ],
+      "dimensions_lidar_lwh": [
+        0.75,
+        0.7,
+        1.7
+      ],
+      "yaw_lidar_rad": 0.0,
+      "point_count": 4,
+      "points_file": "points/candidate_000.npy",
+      "projected_to_camera": true
+    },
+    {
+      "candidate_id": 1,
+      "center_lidar_xyz": [
+        -4.537099838256836,
+        19.093965530395508,
+        -0.4405788654970306
+      ],
+      "dimensions_lidar_lwh": [
+        0.75,
+        0.7,
+        1.7877778162334717
+      ],
+      "yaw_lidar_rad": 0.0,
+      "point_count": 2,
+      "points_file": "points/candidate_001.npy",
+      "projected_to_camera": true
+    },
+    {
+      "candidate_id": 2,
+      "center_lidar_xyz": [
+        -3.4036617279052734,
+        20.461794662475587,
+        -0.4488177792039518
+      ],
+      "dimensions_lidar_lwh": [
+        4.7,
+        1.90196169626312,
+        1.7833939583712826
+      ],
+      "yaw_lidar_rad": 1.5707963267948966,
+      "point_count": 48,
+      "points_file": "points/candidate_002.npy",
+      "projected_to_camera": true
+    },
+    {
+      "candidate_id": 3,
+      "center_lidar_xyz": [
+        8.413357734680176,
+        14.675148963928223,
+        -1.0539720627761144
+      ],
+      "dimensions_lidar_lwh": [
+        0.4,
+        0.4,
+        0.510530704875044
+      ],
+      "yaw_lidar_rad": 0.0,
+      "point_count": 1,
+      "points_file": "points/candidate_003.npy",
+      "projected_to_camera": true
+    },
+    {
+      "candidate_id": 4,
+      "center_lidar_xyz": [
+        8.517049789428711,
+        13.813224792480469,
+        -0.4821313308216332
+      ],
+      "dimensions_lidar_lwh": [
+        0.75,
+        0.7,
+        1.7
+      ],
+      "yaw_lidar_rad": 0.0,
+      "point_count": 14,
+      "points_file": "points/candidate_004.npy",
+      "projected_to_camera": true
+    },
+    {
+      "candidate_id": 5,
+      "center_lidar_xyz": [
+        9.42052173614502,
+        13.65020751953125,
+        -0.4763123163427766
+      ],
+      "dimensions_lidar_lwh": [
+        0.75,
+        0.7,
+        1.7
+      ],
+      "yaw_lidar_rad": 0.0,
+      "point_count": 6,
+      "points_file": "points/candidate_005.npy",
+      "projected_to_camera": true
+    },
+    {
+      "candidate_id": 6,
+      "center_lidar_xyz": [
+        10.754852294921875,
+        11.038601875305176,
+        -0.5339663317293489
+      ],
+      "dimensions_lidar_lwh": [
+        0.75,
+        0.7,
+        1.7
+      ],
+      "yaw_lidar_rad": 0.0,
+      "point_count": 12,
+      "points_file": "points/candidate_006.npy",
+      "projected_to_camera": true
+    },
+    {
+      "candidate_id": 7,
+      "center_lidar_xyz": [
+        10.865548133850098,
+        12.975696563720703,
+        -0.47856743024159376
+      ],
+      "dimensions_lidar_lwh": [
+        0.75,
+        0.7,
+        1.7
+      ],
+      "yaw_lidar_rad": 0.0,
+      "point_count": 12,
+      "points_file": "points/candidate_007.npy",
+      "projected_to_camera": true
+    },
+    {
+      "candidate_id": 8,
+      "center_lidar_xyz": [
+        11.096338272094727,
+        13.946271896362305,
+        -0.44879678583787086
+      ],
+      "dimensions_lidar_lwh": [
+        0.75,
+        0.7,
+        1.7
+      ],
+      "yaw_lidar_rad": 0.0,
+      "point_count": 9,
+      "points_file": "points/candidate_008.npy",
+      "projected_to_camera": true
+    },
+    {
+      "candidate_id": 9,
+      "center_lidar_xyz": [
+        10.741421699523926,
+        11.614631652832031,
+        -0.5180246703562573
+      ],
+      "dimensions_lidar_lwh": [
+        0.75,
+        0.7,
+        1.7
+      ],
+      "yaw_lidar_rad": 0.0,
+      "point_count": 11,
+      "points_file": "points/candidate_009.npy",
+      "projected_to_camera": true
+    },
+    {
+      "candidate_id": 10,
+      "center_lidar_xyz": [
+        10.717856407165527,
+        10.405129432678223,
+        -1.0490665870848628
+      ],
+      "dimensions_lidar_lwh": [
+        0.5747962675283371,
+        0.4,
+        0.7060510790235464
+      ],
+      "yaw_lidar_rad": -1.4744097048609555,
+      "point_count": 8,
+      "points_file": "points/candidate_010.npy",
+      "projected_to_camera": true
+    },
+    {
+      "candidate_id": 11,
+      "center_lidar_xyz": [
+        10.798482894897461,
+        12.171445846557617,
+        -0.5018105197046373
+      ],
+      "dimensions_lidar_lwh": [
+        0.75,
+        0.7,
+        1.7
+      ],
+      "yaw_lidar_rad": 0.0,
+      "point_count": 10,
+      "points_file": "points/candidate_011.npy",
+      "projected_to_camera": true
+    },
+    {
+      "candidate_id": 13,
+      "center_lidar_xyz": [
+        10.935869216918945,
+        7.371603012084961,
+        -1.0347507362064265
+      ],
+      "dimensions_lidar_lwh": [
+        6.6733056059882205,
+        0.7892724897179294,
+        0.8992064723365591
+      ],
+      "yaw_lidar_rad": 1.4753337803419466,
+      "point_count": 198,
+      "points_file": "points/candidate_013.npy",
+      "projected_to_camera": true
+    },
+    {
+      "candidate_id": 14,
+      "center_lidar_xyz": [
+        -3.762437343597412,
+        30.146198272705078,
+        -0.1667424475404834
+      ],
+      "dimensions_lidar_lwh": [
+        0.75,
+        0.7,
+        1.7
+      ],
+      "yaw_lidar_rad": 0.0,
+      "point_count": 2,
+      "points_file": "points/candidate_014.npy",
+      "projected_to_camera": true
+    },
+    {
+      "candidate_id": 15,
+      "center_lidar_xyz": [
+        -3.123075485229492,
+        30.017873764038086,
+        -0.16298668068040267
+      ],
+      "dimensions_lidar_lwh": [
+        0.75,
+        0.7,
+        1.7
+      ],
+      "yaw_lidar_rad": 0.0,
+      "point_count": 2,
+      "points_file": "points/candidate_015.npy",
+      "projected_to_camera": true
+    },
+    {
+      "candidate_id": 16,
+      "center_lidar_xyz": [
+        -4.159185409545898,
+        39.0236701965332,
+        0.07676320067085507
+      ],
+      "dimensions_lidar_lwh": [
+        0.75,
+        0.7,
+        1.7
+      ],
+      "yaw_lidar_rad": 0.0,
+      "point_count": 3,
+      "points_file": "points/candidate_016.npy",
+      "projected_to_camera": true
+    },
+    {
+      "candidate_id": 17,
+      "center_lidar_xyz": [
+        -2.2687768936157227,
+        25.44670295715332,
+        -0.03090840997077149
+      ],
+      "dimensions_lidar_lwh": [
+        1.0429591733826968,
+        0.4,
+        2.2
+      ],
+      "yaw_lidar_rad": 0.8804809619929372,
+      "point_count": 15,
+      "points_file": "points/candidate_017.npy",
+      "projected_to_camera": true
+    },
+    {
+      "candidate_id": 18,
+      "center_lidar_xyz": [
+        -1.6406817436218262,
+        30.3634033203125,
+        -0.13630994412633857
+      ],
+      "dimensions_lidar_lwh": [
+        0.75,
+        0.7,
+        1.7
+      ],
+      "yaw_lidar_rad": 0.0,
+      "point_count": 3,
+      "points_file": "points/candidate_018.npy",
+      "projected_to_camera": true
+    },
+    {
+      "candidate_id": 19,
+      "center_lidar_xyz": [
+        -0.2368886023759842,
+        32.1676025390625,
+        -0.06977644397052696
+      ],
+      "dimensions_lidar_lwh": [
+        0.75,
+        0.7,
+        1.7
+      ],
+      "yaw_lidar_rad": 0.0,
+      "point_count": 1,
+      "points_file": "points/candidate_019.npy",
+      "projected_to_camera": true
+    },
+    {
+      "candidate_id": 20,
+      "center_lidar_xyz": [
+        -0.04565070569515228,
+        32.922733306884766,
+        -0.046480082792694
+      ],
+      "dimensions_lidar_lwh": [
+        0.75,
+        0.7,
+        1.7
+      ],
+      "yaw_lidar_rad": 0.0,
+      "point_count": 1,
+      "points_file": "points/candidate_020.npy",
+      "projected_to_camera": true
+    },
+    {
+      "candidate_id": 21,
+      "center_lidar_xyz": [
+        0.14313216507434845,
+        32.43473434448242,
+        -0.05794842437611414
+      ],
+      "dimensions_lidar_lwh": [
+        0.75,
+        0.7,
+        1.7
+      ],
+      "yaw_lidar_rad": 0.0,
+      "point_count": 1,
+      "points_file": "points/candidate_021.npy",
+      "projected_to_camera": true
+    },
+    {
+      "candidate_id": 22,
+      "center_lidar_xyz": [
+        1.2227909564971924,
+        35.57112121582031,
+        0.042088222870244385
+      ],
+      "dimensions_lidar_lwh": [
+        0.75,
+        0.7,
+        1.7
+      ],
+      "yaw_lidar_rad": 0.0,
+      "point_count": 3,
+      "points_file": "points/candidate_022.npy",
+      "projected_to_camera": true
+    },
+    {
+      "candidate_id": 23,
+      "center_lidar_xyz": [
+        1.6419074535369873,
+        36.0660400390625,
+        0.060730166334064695
+      ],
+      "dimensions_lidar_lwh": [
+        0.75,
+        0.7,
+        1.7
+      ],
+      "yaw_lidar_rad": 0.0,
+      "point_count": 1,
+      "points_file": "points/candidate_023.npy",
+      "projected_to_camera": true
+    },
+    {
+      "candidate_id": 24,
+      "center_lidar_xyz": [
+        1.6587132215499878,
+        30.449172973632812,
+        -0.09602779628784996
+      ],
+      "dimensions_lidar_lwh": [
+        0.75,
+        0.7,
+        1.7
+      ],
+      "yaw_lidar_rad": 0.0,
+      "point_count": 2,
+      "points_file": "points/candidate_024.npy",
+      "projected_to_camera": true
+    },
+    {
+      "candidate_id": 25,
+      "center_lidar_xyz": [
+        2.4481561183929443,
+        30.324968338012695,
+        -0.09043359397951511
+      ],
+      "dimensions_lidar_lwh": [
+        0.75,
+        0.7,
+        1.7
+      ],
+      "yaw_lidar_rad": 0.0,
+      "point_count": 3,
+      "points_file": "points/candidate_025.npy",
+      "projected_to_camera": true
+    },
+    {
+      "candidate_id": 26,
+      "center_lidar_xyz": [
+        3.0022590160369873,
+        29.39434814453125,
+        -0.11007519804722765
+      ],
+      "dimensions_lidar_lwh": [
+        0.75,
+        0.7,
+        1.7
+      ],
+      "yaw_lidar_rad": 0.0,
+      "point_count": 4,
+      "points_file": "points/candidate_026.npy",
+      "projected_to_camera": true
+    }
+  ]
+}
