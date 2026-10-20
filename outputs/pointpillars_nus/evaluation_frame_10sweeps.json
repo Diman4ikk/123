@@ -1,0 +1,855 @@
+{
+  "note": "Single-frame diagnostic; not the official nuScenes mAP/NDS.",
+  "sample_token": "023c4df2d451409881d8e6ea82f14704",
+  "num_sweeps_used": 10,
+  "gt_total_records": 127,
+  "gt_unmapped_categories": {
+    "movable_object.pushable_pullable": 1
+  },
+  "gt_mapped": 126,
+  "gt_mapped_with_points": 94,
+  "gt_evaluated": 70,
+  "gt_evaluated_per_class": {
+    "pedestrian": 28,
+    "car": 6,
+    "bicycle": 1,
+    "motorcycle": 1,
+    "barrier": 25,
+    "truck": 3,
+    "traffic_cone": 5,
+    "construction_vehicle": 1
+  },
+  "eval_region": "official per-class BEV range from ego origin; GT with num_lidar_pts + num_radar_pts > 0 (official)",
+  "predictions_total": 357,
+  "predictions_in_range": 277,
+  "results": [
+    {
+      "score_thr": 0.1,
+      "criterion": "center",
+      "threshold": 2.0,
+      "predictions": 166,
+      "ground_truth": 70,
+      "tp": 65,
+      "fp": 101,
+      "fn": 5,
+      "precision": 0.39156626506024095,
+      "recall": 0.9285714285714286,
+      "mean_center_error_m": 0.41763830636908733,
+      "mean_iou3d": 0.4797617197036743,
+      "mean_yaw_error_rad": 0.3655670173535654,
+      "per_class": {
+        "barrier": {
+          "predictions": 57,
+          "ground_truth": 25,
+          "tp": 24,
+          "fp": 33,
+          "fn": 1,
+          "precision": 0.42105263157894735,
+          "recall": 0.96
+        },
+        "bicycle": {
+          "predictions": 2,
+          "ground_truth": 1,
+          "tp": 0,
+          "fp": 2,
+          "fn": 1,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "bus": {
+          "predictions": 2,
+          "ground_truth": 0,
+          "tp": 0,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": null
+        },
+        "car": {
+          "predictions": 23,
+          "ground_truth": 6,
+          "tp": 6,
+          "fp": 17,
+          "fn": 0,
+          "precision": 0.2608695652173913,
+          "recall": 1.0
+        },
+        "construction_vehicle": {
+          "predictions": 3,
+          "ground_truth": 1,
+          "tp": 1,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.3333333333333333,
+          "recall": 1.0
+        },
+        "motorcycle": {
+          "predictions": 1,
+          "ground_truth": 1,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "pedestrian": {
+          "predictions": 60,
+          "ground_truth": 28,
+          "tp": 28,
+          "fp": 32,
+          "fn": 0,
+          "precision": 0.4666666666666667,
+          "recall": 1.0
+        },
+        "traffic_cone": {
+          "predictions": 11,
+          "ground_truth": 5,
+          "tp": 4,
+          "fp": 7,
+          "fn": 1,
+          "precision": 0.36363636363636365,
+          "recall": 0.8
+        },
+        "truck": {
+          "predictions": 7,
+          "ground_truth": 3,
+          "tp": 2,
+          "fp": 5,
+          "fn": 1,
+          "precision": 0.2857142857142857,
+          "recall": 0.6666666666666666
+        }
+      }
+    },
+    {
+      "score_thr": 0.1,
+      "criterion": "iou3d",
+      "threshold": 0.25,
+      "predictions": 166,
+      "ground_truth": 70,
+      "tp": 64,
+      "fp": 102,
+      "fn": 6,
+      "precision": 0.3855421686746988,
+      "recall": 0.9142857142857143,
+      "mean_center_error_m": 0.2486613368436458,
+      "mean_iou3d": 0.5538771152496338,
+      "mean_yaw_error_rad": 0.2701244875318398,
+      "per_class": {
+        "barrier": {
+          "predictions": 57,
+          "ground_truth": 25,
+          "tp": 24,
+          "fp": 33,
+          "fn": 1,
+          "precision": 0.42105263157894735,
+          "recall": 0.96
+        },
+        "bicycle": {
+          "predictions": 2,
+          "ground_truth": 1,
+          "tp": 0,
+          "fp": 2,
+          "fn": 1,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "bus": {
+          "predictions": 2,
+          "ground_truth": 0,
+          "tp": 0,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": null
+        },
+        "car": {
+          "predictions": 23,
+          "ground_truth": 6,
+          "tp": 6,
+          "fp": 17,
+          "fn": 0,
+          "precision": 0.2608695652173913,
+          "recall": 1.0
+        },
+        "construction_vehicle": {
+          "predictions": 3,
+          "ground_truth": 1,
+          "tp": 1,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.3333333333333333,
+          "recall": 1.0
+        },
+        "motorcycle": {
+          "predictions": 1,
+          "ground_truth": 1,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "pedestrian": {
+          "predictions": 60,
+          "ground_truth": 28,
+          "tp": 27,
+          "fp": 33,
+          "fn": 1,
+          "precision": 0.45,
+          "recall": 0.9642857142857143
+        },
+        "traffic_cone": {
+          "predictions": 11,
+          "ground_truth": 5,
+          "tp": 4,
+          "fp": 7,
+          "fn": 1,
+          "precision": 0.36363636363636365,
+          "recall": 0.8
+        },
+        "truck": {
+          "predictions": 7,
+          "ground_truth": 3,
+          "tp": 2,
+          "fp": 5,
+          "fn": 1,
+          "precision": 0.2857142857142857,
+          "recall": 0.6666666666666666
+        }
+      }
+    },
+    {
+      "score_thr": 0.1,
+      "criterion": "iou3d",
+      "threshold": 0.5,
+      "predictions": 166,
+      "ground_truth": 70,
+      "tp": 42,
+      "fp": 124,
+      "fn": 28,
+      "precision": 0.25301204819277107,
+      "recall": 0.6,
+      "mean_center_error_m": 0.19698655544499744,
+      "mean_iou3d": 0.6272906064987183,
+      "mean_yaw_error_rad": 0.36137277794219075,
+      "per_class": {
+        "barrier": {
+          "predictions": 57,
+          "ground_truth": 25,
+          "tp": 13,
+          "fp": 44,
+          "fn": 12,
+          "precision": 0.22807017543859648,
+          "recall": 0.52
+        },
+        "bicycle": {
+          "predictions": 2,
+          "ground_truth": 1,
+          "tp": 0,
+          "fp": 2,
+          "fn": 1,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "bus": {
+          "predictions": 2,
+          "ground_truth": 0,
+          "tp": 0,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": null
+        },
+        "car": {
+          "predictions": 23,
+          "ground_truth": 6,
+          "tp": 6,
+          "fp": 17,
+          "fn": 0,
+          "precision": 0.2608695652173913,
+          "recall": 1.0
+        },
+        "construction_vehicle": {
+          "predictions": 3,
+          "ground_truth": 1,
+          "tp": 1,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.3333333333333333,
+          "recall": 1.0
+        },
+        "motorcycle": {
+          "predictions": 1,
+          "ground_truth": 1,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "pedestrian": {
+          "predictions": 60,
+          "ground_truth": 28,
+          "tp": 18,
+          "fp": 42,
+          "fn": 10,
+          "precision": 0.3,
+          "recall": 0.6428571428571429
+        },
+        "traffic_cone": {
+          "predictions": 11,
+          "ground_truth": 5,
+          "tp": 2,
+          "fp": 9,
+          "fn": 3,
+          "precision": 0.18181818181818182,
+          "recall": 0.4
+        },
+        "truck": {
+          "predictions": 7,
+          "ground_truth": 3,
+          "tp": 2,
+          "fp": 5,
+          "fn": 1,
+          "precision": 0.2857142857142857,
+          "recall": 0.6666666666666666
+        }
+      }
+    },
+    {
+      "score_thr": 0.3,
+      "criterion": "center",
+      "threshold": 2.0,
+      "predictions": 49,
+      "ground_truth": 70,
+      "tp": 47,
+      "fp": 2,
+      "fn": 23,
+      "precision": 0.9591836734693877,
+      "recall": 0.6714285714285714,
+      "mean_center_error_m": 0.3109172499140523,
+      "mean_iou3d": 0.5336131453514099,
+      "mean_yaw_error_rad": 0.1802159430457458,
+      "per_class": {
+        "barrier": {
+          "predictions": 22,
+          "ground_truth": 25,
+          "tp": 20,
+          "fp": 2,
+          "fn": 5,
+          "precision": 0.9090909090909091,
+          "recall": 0.8
+        },
+        "bicycle": {
+          "predictions": 0,
+          "ground_truth": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "precision": null,
+          "recall": 0.0
+        },
+        "car": {
+          "predictions": 4,
+          "ground_truth": 6,
+          "tp": 4,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.6666666666666666
+        },
+        "construction_vehicle": {
+          "predictions": 1,
+          "ground_truth": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "motorcycle": {
+          "predictions": 0,
+          "ground_truth": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "precision": null,
+          "recall": 0.0
+        },
+        "pedestrian": {
+          "predictions": 21,
+          "ground_truth": 28,
+          "tp": 21,
+          "fp": 0,
+          "fn": 7,
+          "precision": 1.0,
+          "recall": 0.75
+        },
+        "traffic_cone": {
+          "predictions": 0,
+          "ground_truth": 5,
+          "tp": 0,
+          "fp": 0,
+          "fn": 5,
+          "precision": null,
+          "recall": 0.0
+        },
+        "truck": {
+          "predictions": 1,
+          "ground_truth": 3,
+          "tp": 1,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.3333333333333333
+        }
+      }
+    },
+    {
+      "score_thr": 0.3,
+      "criterion": "iou3d",
+      "threshold": 0.25,
+      "predictions": 49,
+      "ground_truth": 70,
+      "tp": 45,
+      "fp": 4,
+      "fn": 25,
+      "precision": 0.9183673469387755,
+      "recall": 0.6428571428571429,
+      "mean_center_error_m": 0.24317490206270517,
+      "mean_iou3d": 0.5644766092300415,
+      "mean_yaw_error_rad": 0.17402864369961432,
+      "per_class": {
+        "barrier": {
+          "predictions": 22,
+          "ground_truth": 25,
+          "tp": 19,
+          "fp": 3,
+          "fn": 6,
+          "precision": 0.8636363636363636,
+          "recall": 0.76
+        },
+        "bicycle": {
+          "predictions": 0,
+          "ground_truth": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "precision": null,
+          "recall": 0.0
+        },
+        "car": {
+          "predictions": 4,
+          "ground_truth": 6,
+          "tp": 4,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.6666666666666666
+        },
+        "construction_vehicle": {
+          "predictions": 1,
+          "ground_truth": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "motorcycle": {
+          "predictions": 0,
+          "ground_truth": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "precision": null,
+          "recall": 0.0
+        },
+        "pedestrian": {
+          "predictions": 21,
+          "ground_truth": 28,
+          "tp": 20,
+          "fp": 1,
+          "fn": 8,
+          "precision": 0.9523809523809523,
+          "recall": 0.7142857142857143
+        },
+        "traffic_cone": {
+          "predictions": 0,
+          "ground_truth": 5,
+          "tp": 0,
+          "fp": 0,
+          "fn": 5,
+          "precision": null,
+          "recall": 0.0
+        },
+        "truck": {
+          "predictions": 1,
+          "ground_truth": 3,
+          "tp": 1,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.3333333333333333
+        }
+      }
+    },
+    {
+      "score_thr": 0.3,
+      "criterion": "iou3d",
+      "threshold": 0.5,
+      "predictions": 49,
+      "ground_truth": 70,
+      "tp": 30,
+      "fp": 19,
+      "fn": 40,
+      "precision": 0.6122448979591837,
+      "recall": 0.42857142857142855,
+      "mean_center_error_m": 0.17956986191609808,
+      "mean_iou3d": 0.6327162981033325,
+      "mean_yaw_error_rad": 0.23050940588168686,
+      "per_class": {
+        "barrier": {
+          "predictions": 22,
+          "ground_truth": 25,
+          "tp": 10,
+          "fp": 12,
+          "fn": 15,
+          "precision": 0.45454545454545453,
+          "recall": 0.4
+        },
+        "bicycle": {
+          "predictions": 0,
+          "ground_truth": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "precision": null,
+          "recall": 0.0
+        },
+        "car": {
+          "predictions": 4,
+          "ground_truth": 6,
+          "tp": 4,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.6666666666666666
+        },
+        "construction_vehicle": {
+          "predictions": 1,
+          "ground_truth": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "motorcycle": {
+          "predictions": 0,
+          "ground_truth": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "precision": null,
+          "recall": 0.0
+        },
+        "pedestrian": {
+          "predictions": 21,
+          "ground_truth": 28,
+          "tp": 14,
+          "fp": 7,
+          "fn": 14,
+          "precision": 0.6666666666666666,
+          "recall": 0.5
+        },
+        "traffic_cone": {
+          "predictions": 0,
+          "ground_truth": 5,
+          "tp": 0,
+          "fp": 0,
+          "fn": 5,
+          "precision": null,
+          "recall": 0.0
+        },
+        "truck": {
+          "predictions": 1,
+          "ground_truth": 3,
+          "tp": 1,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.3333333333333333
+        }
+      }
+    },
+    {
+      "score_thr": 0.5,
+      "criterion": "center",
+      "threshold": 2.0,
+      "predictions": 15,
+      "ground_truth": 70,
+      "tp": 15,
+      "fp": 0,
+      "fn": 55,
+      "precision": 1.0,
+      "recall": 0.21428571428571427,
+      "mean_center_error_m": 0.2659085096783907,
+      "mean_iou3d": 0.6213964819908142,
+      "mean_yaw_error_rad": 0.05041971671828834,
+      "per_class": {
+        "barrier": {
+          "predictions": 4,
+          "ground_truth": 25,
+          "tp": 4,
+          "fp": 0,
+          "fn": 21,
+          "precision": 1.0,
+          "recall": 0.16
+        },
+        "bicycle": {
+          "predictions": 0,
+          "ground_truth": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "precision": null,
+          "recall": 0.0
+        },
+        "car": {
+          "predictions": 4,
+          "ground_truth": 6,
+          "tp": 4,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.6666666666666666
+        },
+        "construction_vehicle": {
+          "predictions": 1,
+          "ground_truth": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "motorcycle": {
+          "predictions": 0,
+          "ground_truth": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "precision": null,
+          "recall": 0.0
+        },
+        "pedestrian": {
+          "predictions": 5,
+          "ground_truth": 28,
+          "tp": 5,
+          "fp": 0,
+          "fn": 23,
+          "precision": 1.0,
+          "recall": 0.17857142857142858
+        },
+        "traffic_cone": {
+          "predictions": 0,
+          "ground_truth": 5,
+          "tp": 0,
+          "fp": 0,
+          "fn": 5,
+          "precision": null,
+          "recall": 0.0
+        },
+        "truck": {
+          "predictions": 1,
+          "ground_truth": 3,
+          "tp": 1,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.3333333333333333
+        }
+      }
+    },
+    {
+      "score_thr": 0.5,
+      "criterion": "iou3d",
+      "threshold": 0.25,
+      "predictions": 15,
+      "ground_truth": 70,
+      "tp": 15,
+      "fp": 0,
+      "fn": 55,
+      "precision": 1.0,
+      "recall": 0.21428571428571427,
+      "mean_center_error_m": 0.2659085096783907,
+      "mean_iou3d": 0.6213964819908142,
+      "mean_yaw_error_rad": 0.05041971671828834,
+      "per_class": {
+        "barrier": {
+          "predictions": 4,
+          "ground_truth": 25,
+          "tp": 4,
+          "fp": 0,
+          "fn": 21,
+          "precision": 1.0,
+          "recall": 0.16
+        },
+        "bicycle": {
+          "predictions": 0,
+          "ground_truth": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "precision": null,
+          "recall": 0.0
+        },
+        "car": {
+          "predictions": 4,
+          "ground_truth": 6,
+          "tp": 4,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.6666666666666666
+        },
+        "construction_vehicle": {
+          "predictions": 1,
+          "ground_truth": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "motorcycle": {
+          "predictions": 0,
+          "ground_truth": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "precision": null,
+          "recall": 0.0
+        },
+        "pedestrian": {
+          "predictions": 5,
+          "ground_truth": 28,
+          "tp": 5,
+          "fp": 0,
+          "fn": 23,
+          "precision": 1.0,
+          "recall": 0.17857142857142858
+        },
+        "traffic_cone": {
+          "predictions": 0,
+          "ground_truth": 5,
+          "tp": 0,
+          "fp": 0,
+          "fn": 5,
+          "precision": null,
+          "recall": 0.0
+        },
+        "truck": {
+          "predictions": 1,
+          "ground_truth": 3,
+          "tp": 1,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.3333333333333333
+        }
+      }
+    },
+    {
+      "score_thr": 0.5,
+      "criterion": "iou3d",
+      "threshold": 0.5,
+      "predictions": 15,
+      "ground_truth": 70,
+      "tp": 13,
+      "fp": 2,
+      "fn": 57,
+      "precision": 0.8666666666666667,
+      "recall": 0.18571428571428572,
+      "mean_center_error_m": 0.2259711507399896,
+      "mean_iou3d": 0.655875563621521,
+      "mean_yaw_error_rad": 0.054549929999145125,
+      "per_class": {
+        "barrier": {
+          "predictions": 4,
+          "ground_truth": 25,
+          "tp": 2,
+          "fp": 2,
+          "fn": 23,
+          "precision": 0.5,
+          "recall": 0.08
+        },
+        "bicycle": {
+          "predictions": 0,
+          "ground_truth": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "precision": null,
+          "recall": 0.0
+        },
+        "car": {
+          "predictions": 4,
+          "ground_truth": 6,
+          "tp": 4,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.6666666666666666
+        },
+        "construction_vehicle": {
+          "predictions": 1,
+          "ground_truth": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "motorcycle": {
+          "predictions": 0,
+          "ground_truth": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "precision": null,
+          "recall": 0.0
+        },
+        "pedestrian": {
+          "predictions": 5,
+          "ground_truth": 28,
+          "tp": 5,
+          "fp": 0,
+          "fn": 23,
+          "precision": 1.0,
+          "recall": 0.17857142857142858
+        },
+        "traffic_cone": {
+          "predictions": 0,
+          "ground_truth": 5,
+          "tp": 0,
+          "fp": 0,
+          "fn": 5,
+          "precision": null,
+          "recall": 0.0
+        },
+        "truck": {
+          "predictions": 1,
+          "ground_truth": 3,
+          "tp": 1,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.3333333333333333
+        }
+      }
+    }
+  ]
+}

@@ -107,6 +107,14 @@ def points_in_boxes(points: np.ndarray, records: list[dict[str, Any]]) -> np.nda
     return counts
 
 
+def bev_distance(center: list[float], lidar2ego: np.ndarray | None) -> float:
+    """BEV distance from the ego origin (official) or from LIDAR_TOP if no calib."""
+    if lidar2ego is None:
+        return math.hypot(center[0], center[1])
+    ego = lidar2ego[:3, :3] @ np.asarray(center) + lidar2ego[:3, 3]
+    return math.hypot(ego[0], ego[1])
+
+
 def box_corners_bev(r: dict[str, Any]) -> np.ndarray:
     cx, cy, _ = r["center_xyz_m"]
     w, l, _ = r["size_wlh_m"]
@@ -244,7 +252,9 @@ def main() -> None:
     parser.add_argument("--gt", type=Path, default=GT_PATH)
     parser.add_argument("--points", type=Path, default=POINTS_PATH)
     parser.add_argument("--output-dir", type=Path, default=OUTPUT_DIR)
+    parser.add_argument("--tag", default="", help="suffix for output file names")
     args = parser.parse_args()
+    suffix = f"_{args.tag}" if args.tag else ""
 
     points = np.fromfile(args.points, dtype=np.float32).reshape(-1, 5)
     with args.gt.open("r", encoding="utf-8") as file:
@@ -261,18 +271,23 @@ def main() -> None:
             unmapped[g["category"]] = unmapped.get(g["category"], 0) + 1
             continue
         gts_all.append({**g, "label": label, "yaw": wxyz_to_yaw(g["orientation_wxyz"])})
+    lidar2ego = np.asarray(pred_payload["lidar2ego"]) if "lidar2ego" in pred_payload else None
+    official_counts = all("num_lidar_pts" in g for g in gts_all)
     gt_point_counts = points_in_boxes(points, gts_all)
     for g, n in zip(gts_all, gt_point_counts):
         g["num_lidar_points"] = int(n)
-        g["distance_m"] = math.hypot(*g["center_xyz_m"][:2])
+        g["distance_m"] = bev_distance(g["center_xyz_m"], lidar2ego)
+        # Official filter: num_lidar_pts + num_radar_pts > 0; else keyframe points in box.
+        g["has_points"] = (
+            g["num_lidar_pts"] + g["num_radar_pts"] > 0 if official_counts else n > 0
+        )
 
-    gts = [g for g in gts_all
-           if g["distance_m"] <= CLASS_RANGE[g["label"]] and g["num_lidar_points"] > 0]
+    gts = [g for g in gts_all if g["distance_m"] <= CLASS_RANGE[g["label"]] and g["has_points"]]
 
     # ---- Predictions
     preds_all = [{**p, "yaw": p["yaw_rad"]} for p in pred_payload["predictions"]]
     for p in preds_all:
-        p["distance_m"] = math.hypot(*p["center_xyz_m"][:2])
+        p["distance_m"] = bev_distance(p["center_xyz_m"], lidar2ego)
     preds_in_range = [p for p in preds_all if p["distance_m"] <= CLASS_RANGE[p["label"]]]
 
     report: dict[str, Any] = {
@@ -285,7 +300,11 @@ def main() -> None:
         "gt_mapped_with_points": int((gt_point_counts > 0).sum()),
         "gt_evaluated": len(gts),
         "gt_evaluated_per_class": {},
-        "eval_region": "official per-class BEV range from LIDAR_TOP origin; GT with >=1 keyframe LiDAR point",
+        "eval_region": (
+            f"official per-class BEV range from {'ego' if lidar2ego is not None else 'LIDAR_TOP'} origin; "
+            + ("GT with num_lidar_pts + num_radar_pts > 0 (official)" if official_counts
+               else "GT with >=1 keyframe LiDAR point")
+        ),
         "predictions_total": len(preds_all),
         "predictions_in_range": len(preds_in_range),
         "results": [],
@@ -324,17 +343,18 @@ def main() -> None:
                 main_pairs, main_preds = pairs, preds
 
     args.output_dir.mkdir(parents=True, exist_ok=True)
-    report_path = args.output_dir / "evaluation_frame.json"
+    report_path = args.output_dir / f"evaluation_frame{suffix}.json"
     with report_path.open("w", encoding="utf-8") as file:
         json.dump(report, file, indent=2)
 
     plot_bev(points, gts, main_preds, {p for p, _ in main_pairs}, {g for _, g in main_pairs},
-             args.output_dir / "bev_pred_vs_gt.png", MAIN_SCORE_THRESHOLD)
-    plot_3d(points, gts, main_preds, args.output_dir / "view3d_pred_vs_gt.png")
+             args.output_dir / f"bev_pred_vs_gt{suffix}.png", MAIN_SCORE_THRESHOLD)
+    plot_3d(points, gts, main_preds, args.output_dir / f"view3d_pred_vs_gt{suffix}.png")
 
     print(f"GT records: {len(gt_raw)} | mapped to 10 classes: {len(gts_all)} | unmapped: {unmapped}")
-    print(f"GT with >=1 LiDAR point inside box: {report['gt_mapped_with_points']}/{len(gts_all)}")
-    print(f"GT evaluated (in class range, >=1 point): {len(gts)} {report['gt_evaluated_per_class']}")
+    print(f"GT with >=1 keyframe LiDAR point inside box: {report['gt_mapped_with_points']}/{len(gts_all)}")
+    print(f"Eval region: {report['eval_region']}")
+    print(f"GT evaluated: {len(gts)} {report['gt_evaluated_per_class']}")
     print(f"Predictions: total {len(preds_all)}, in class range {len(preds_in_range)}")
     print(f"{'score>=':>7} {'criterion':<14} {'pred':>5} {'TP':>4} {'FP':>4} {'FN':>4} {'P':>6} {'R':>6} {'IoU':>5} {'dXY':>5}")
     for e in report["results"]:
